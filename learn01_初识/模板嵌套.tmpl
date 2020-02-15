@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+有两种嵌套方式
+<ul>
+    <li>通过define嵌套</li>
+    {{template "1.tmpl"}}
+    <li>加载别的模板</li>
+    {{template "2.tmpl"}}
+</ul>
+</body>
+</html>
+{{define "1.tmpl"}}
+我是通过define定义的
+{{end}}
